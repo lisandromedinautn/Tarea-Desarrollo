@@ -1,10 +1,10 @@
 import math
 
-def calcular_hipotenusa():
-    a = float(input("Ingrese el primer ctaeto: "))
-    b = float(input("Ingrese el segundo cateto: "))
+def calcular_hipotenusa(a, b):
     hipotenusa = math.sqrt(a^2 + b^2)
-    print(f"La hipotenusa es: {hipotenusa}")
+    return hipotenusa
 
+a = float(input("Ingrese el primer cateto: "))
+b = float(input("Ingrese el segundo cateto: "))
 
-calcular_hipotenusa()
+print(calcular_hipotenusa(a, b))
